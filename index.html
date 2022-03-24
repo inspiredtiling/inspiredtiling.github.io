@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Inspired Tiling</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<!--FAD BANNER-->
+<link rel="stylesheet" href="css/global.css" type="text/css">
+
+<script type="text/javascript" src="js/jquery_002.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+
+
+<link rel="stylesheet" href="new-js/all.css" type="text/css">    
+<script type="text/javascript" src="new-js/mootools-core-1.js"></script>
+<script type="text/javascript" src="new-js/slideGallery.js"></script>
+
+<script type="text/javascript">
+		window.addEvent("domready", function() {
+					/* Example 2 */
+			var gallery2 = new slideGallery($$(".gallery2"), {
+				steps: 3,
+				mode: "callback",
+				autoplayOpposite: true,
+				paging: true,
+				pagingHolder: ".paging",
+				onStart: function() {
+					this.gallery.getElement(".info").set("html", parseInt(this.current+1) + "-" + parseInt(this.visible+this.current) + " from " + this.items.length);
+				},
+				onPlay: function() { this.fireEvent("start"); }
+			});
+			
+			
+			/* Examples panel */
+			var panel = true;
+			$$(".toggler").addEvent("click", function() {
+				if(panel) {
+					this.set("text", "show").getNext().setStyle("display", "none");
+					panel = false;
+				}
+				else {
+					this.set("text", "hide").getNext().setStyle("display", "block");
+					panel = true;
+				}
+				return false;
+			});
+		});
+	</script>
+    
+    
+    <script type="text/javascript">
+	$(function() {   
+
+	$('.slider ul').cycle({ 
+		fx: 'fade',
+		timeout: 5000,
+		speed: 1000
+	});
+});
+</script>
+<!--END FAD BANNER--> 
+
+</head>
+
+<body>
+<!--WRAPPER-->
+<div id="wrapper">
+<!--HEADER-->
+<div class="header">
+	<h1><a href="index.html"><img src="images/logo.png" alt="" /></a></h1>
+    <div class="hedRight">
+            <span class="phone"><br />
+<span class="mb">  Telephone: 0786 222 5108</span></span>
+            <div class="clear"></div>
+
+        
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+<!--END HEADER-->
+<!--NAVIGATION-->
+<div class="navigation">
+	<div class="navLeft">
+    	<ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+			<li><a href="video_gallery.html">Video Gallery</a></li>
+			<li><a href="testimonials.html">Testimonials</a></li>
+            <li class="last"><span class="last"><a href="contact_us.html">Contact Us</a></span></li>
+        </ul>
+    </div>    	
+</div>
+<!--END NAVIGATION-->
+<!--BANNER-->
+<div class="banner">
+<div class="slider">
+   <ul style="position: relative;">
+        <li style="position: absolute; top: 0px; left: 0px; display: block; z-index: 4; opacity: 0.537663; width: 993px; height: 254px;">
+         <img src="images/banner5.jpg" alt="" />
+         <h2>Beautiful Bathroom<br />Tiling</h2>
+         </li>
+         <li style="position: absolute; top: 0px; left: 0px; display: block; z-index: 4; opacity: 0.537663; width: 993px; height: 254px;">
+         <img src="images/banner6.jpg" alt="" />
+         <h2>...more Bathroom<br />Tiling</h2>
+         </li>
+         <li style="position: absolute; top: 0px; left: 0px; display: block; z-index: 4; opacity: 0.537663; width: 993px; height: 254px;">
+         <img src="images/banner7.jpg" alt="" />
+         <h2>Attractive Tiling<br />for Kitchens</h2>
+         </li>
+		 <li style="position: absolute; top: 0px; left: 0px; display: block; z-index: 4; opacity: 0.537663; width: 993px; height: 254px;">
+         <img src="images/banner8.jpg" alt="" />
+         <h2>Traditional<br />Floor Tiling</h2>
+         </li>
+   </ul>
+</div>
+</div>
+<!--END BANNER-->
+<!--CONTENT AREA-->
+
+<div class="contentArea">
+	<div class="leftPanel">
+		<h1 class="welcome welcomeBorder">Welcome to <span class="autoBig">Inspired Tiling</span></h1>
+        <p>You have a bathroom or a kitchen that requires tiling and that's probably the reason that you've come to the Inspired Tiling web site. Now that you're here we hope you will stay a while and take a look at some of the tiling and related work we've  carried out in and around Watford on our <a href="projects.html">Projects</a> page. This gives you a view of the type of work we've done with images and a short brief. </p>
+        <p>As you will see below and on our <a href="about_us.html">About us</a> page we don't only do tiling and don't just work in Watford. For example we are experts at installing under floor heating and carrying out plastering work. </p>
+		<p>Whatever type of tiling or related service you require, give us a call or drop us an e-mail today. Our number is in the top right hand cover of the page and further contact information can be found on our <a href="contact_us.html">Contact us</a> page. We look forward to seeing you soon. </p>
+        <div class="someServiceCover">
+        	<div class="someServiceTop"></div>
+            <div class="someServiceMid">
+            	<h3>Some of our <span class="red">additional services</span></h3>
+                <p>We specialise in tiling for all rooms around the house, for flooring and walls and anywhere else where tiles would look great. See some of other services below: </p>
+                <div class="boxServ padRight10">
+                	<img src="images/img01.jpg" class="borderImg fl" alt="" />
+                    <span class="stxt">We carry all <strong>Plastering</strong> work and not only that associated with tiling. Contact us to discuss. </span>
+                    <div class="clear"></div>
+              </div>
+                <div class="boxServ">
+                	<img src="images/img02.jpg" alt="" width="102" height="91" class="borderImg fl" />
+                    <span class="stxt">We are expert fitters of <strong>Under Floor Heating</strong> enabling you to do away with those radiators. </span>
+                    <div class="clear"></div>
+              </div>
+                <div class="clear"></div>
+            </div>
+            <div class="someServiceBottom"></div>
+        </div>
+    </div>
+    <div class="rightPanel">
+		<h1 class="clientThink">What our <span class="autoBig">Clients Think</span></h1>
+      <div class="gallery gallery2">
+			<div class="holder">
+				<ul >
+					
+					<li><img src="images/small_banner.jpg" alt="image" height="184" width="446"></li>
+					<li><img src="images/small_banner2.jpg" alt="image" height="184" width="446"></li>
+					<li><img src="images/small_banner3.jpg" alt="image" height="184" width="446"></li>
+				</ul>
+			</div>
+		</div>
+        
+        <h1 class="clientThink">Why <span class="autoBig">Inspired Tiling ?</span></h1>
+        <ul class="list">
+        	<li><span>Fully Insured </span></li>
+            <li><span>Prompt and punctual at all times </span></li>
+            <li><span>We leave your home as neat and tidy as we found </span>it</li>
+            <li><span>Several years of experience </span></li>
+            <li><span>A proven track record of quality work and satisfied clients </span></li>
+        </ul>
+    <a href="contact_us.html" class="readMore"><img src="images/contact-us.jpg" /></a>    </div>
+    <div class="clear"></div>
+</div>
+
+<!--END CONTENT AREA-->
+
+<div class="bluebg">
+<div class="footerTopLink">
+<div class="fl"><a href="index.html">Home</a> | <a href="https://www.inspiredtiling.co.uk/services.html">Services</a> | <a href="projects.html">Projects</a> | <a href="contact_us.html">Contact Us</a></div>    <div class="fr powerBy">Web Design By: <a href="http://www.activeimage.co.uk">Active Image Web Solutions</a></div>
+</div>
+
+<!--FOOTER-->
+<div class="footer">
+<ul class="copyright">
+<li>[ copyright &copy; 2011 Inspired Tiling ]  | Tel: 0786 222 5108 | Email: <a href="cdn-cgi/l/email-protection#d7beb9b1b897beb9a4a7bea5b2b3a3bebbbeb9b0f9b4b8f9a2bc"><span class="__cf_email__" data-cfemail="6b02050d042b0205181b02190e0f1f020702050c450804451e00">[email&#160;protected]</span></a></li>
+</ul>
+	<ul class="social-icons">
+    <li><a href="index.html#"><img src="images/twitter.png" alt="" class="fr" /></a></li>
+     <li><a href="index.html#"><img src="images/facebook.png" alt="" class="fr padRight10" /></a></li>
+    
+    
+    </ul> 
+    <div class="clear"></div>
+</div>
+<!--END FOOTER-->
+
+
+
+<!--END WRAPPER-->
+</div>
+</div>
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
